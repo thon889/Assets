@@ -14,7 +14,7 @@ public class Sketch : MonoBehaviour {
         {
             float perc = i / (float)totalCubes;
             float x = perc * TotalDistance;
-            float y = 5.0f;
+            float y = 5.5f;
             float z = 0.0f;
             var newCube = (GameObject)Instantiate(myPreFab, new Vector3(x, y, z), Quaternion.identity);
             newCube.GetComponent<CubeScript>().SetSize(1.0f - perc);
